@@ -12,7 +12,7 @@ export const TopCars = () => {
         <div>
             {topCars.map((el,index)=>{
                 return(
-                    <tr>
+                    <tr key={index}>
                         <td>{el.manufacturer}</td>
                         <td>{el.model}</td>
                     </tr>
