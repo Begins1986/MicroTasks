@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import NewComponent from "./NewComponent";
 
 const Filter = () => {
 
@@ -29,22 +30,25 @@ const Filter = () => {
 
     return (
         <>
-            <ul>
-                {filterMoney.map(m => {
-                        return (
+            <NewComponent filterMoney={filterMoney}
+                          onClickFilterHandler={onClickFilterHandler}
+            />
+            {/*<ul>*/}
+            {/*    {filterMoney.map(m => {*/}
+            {/*            return (*/}
 
-                            <li>
-                                <span>{m.banknots}</span>
-                                <span>{m.value}</span>
-                                <span>{m.number}</span>
-                            </li>
-                        )
-                    }
-                )}
-            </ul>
-            <button onClick={() => onClickFilterHandler('all')}>all</button>
-            <button onClick={() => onClickFilterHandler('dollars')}>dollars</button>
-            <button onClick={() => onClickFilterHandler('rubles')}>rubles</button>
+            {/*                <li>*/}
+            {/*                    <span>{m.banknots}</span>*/}
+            {/*                    <span>{m.value}</span>*/}
+            {/*                    <span>{m.number}</span>*/}
+            {/*                </li>*/}
+            {/*            )*/}
+            {/*        }*/}
+            {/*    )}*/}
+            {/*</ul>*/}
+            {/*<button onClick={() => onClickFilterHandler('all')}>all</button>*/}
+            {/*<button onClick={() => onClickFilterHandler('dollars')}>dollars</button>*/}
+            {/*<button onClick={() => onClickFilterHandler('rubles')}>rubles</button>*/}
         </>
     );
 };
