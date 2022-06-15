@@ -6,6 +6,7 @@ import {Footer} from "./site/Footer";
 import {TopCars} from "./site/TopCars";
 import Filter from "./site/Filter";
 import Button from "./site/Button";
+import {Input} from "./site/Input";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             <Button/>
             <Footer title={'Footer'}/>
             <TopCars/>
+            <Input/>
         </div>
     );
 }
